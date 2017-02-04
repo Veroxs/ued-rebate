@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>返利口令</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="email=no,address=no,telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/page-kouling.css"/>
+</head>
+<body class="page-kouling" data-page="kouling">
+<div class="header-title">
+    <em class="back"></em>
+
+    <h2>今日必抢</h2>
+    <em class="share"></em>
+</div>
+<main>
+    <div class="img-box">
+        <img src="images/kouling-pic1.jpg">
+    </div>
+    <div class="info-box">
+        <p class="name">
+            <span class="baoyou">【包邮】</span>
+            韩国进口零食品 海牌/海飘 甜辣炒年糕条
+        </p>
+
+        <p class="price">
+            <span>￥7.50</span>
+            <span class="zhekou">20.99</span>
+        </p>
+
+        <p class="price-fan">
+            返
+            <span class="num">3.55</span>
+            <span class="daoshou">到手价：3.45</span>
+        </p>
+    </div>
+
+    <p class="from">
+        <span class="gray">信用：</span>
+        <span class="icon"></span>
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+        <span class="gray">来自：</span>
+        <span>石全诗美专营店</span>
+    </p>
+</main>
+<div class="bottom-bar">
+    <a class="btn" id="btn-buy">返利模式购买</a>
+</div>
+<!--弹窗-->
+<div class="popup-box kouling-box">
+    <h2 class="box-title">返利口令</h2>
+
+    <p class="p1">请长按复制以下识别码，打开返利吧客户端即
+        可返利模式购买本商品</p>
+
+    <div class="input-content">
+        <input type="text" name="" value="123456">
+    </div>
+    <p class="p2">地球人都在用的返利神器返利还没安装？</p>
+    <a class="btn-download">下载返利客户端</a>
+</div>
+<!--跳转-->
+<div class="linkTo">
+    <div class="title">正在进入<span class="red">天猫</span></div>
+    <div class="content">
+        <div class="price-box b1">
+            <span class="txt">先付款：</span>
+            <span class="price">￥69.90</span>
+        </div>
+        <div class="price-box b2">
+            <span class="txt">先付款：</span>
+            <span class="price">￥69.90</span>
+        </div>
+        <div class="price-box b3">
+            <span class="txt">先付款：</span>
+            <span class="price">￥69.90</span>
+        </div>
+        <div class="tips-content">
+            <p class="tips-title">【返还小贴士】</p>
+
+            <div class="tips-p">
+                <p class="question"><em>1.</em>多种规格、颜色、尺寸的宝贝价格不同怎么返？</p>
+
+                <p class="answer">返还=实际支付金额 × 返还比例。</p>
+
+                <p class="question"><em>2. </em>宝贝加入购物车后，去结算是否有返？</p>
+
+                <p class="answer">宝贝通过“返还购”加入购物车后，去结算有返还。</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <span class="fan">买后返58.5%</span>
+        <span class="xuzhi">返利须知<em></em></span>
+    </div>
+</div>
+<!-- js start -->
+<script src="js/zepto.min.js"></script>
+<script src="js/autoFize.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var $popupMask = "<div class='popup-mask'></div>";
+        $("#btn-buy").click(function () {
+            $("body").append($popupMask);
+            $(".kouling-box").show();
+        })
+        $("body").on("click", ".popup-mask", function () {
+            $(".popup-mask").remove();
+            $(".kouling-box").hide();
+        })
+    })
+</script>
+
+<!-- js end -->
+</body>
+</html>

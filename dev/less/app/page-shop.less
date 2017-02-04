@@ -1,0 +1,116 @@
+.page-shop {
+  position: relative;
+  padding: 140px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  .header-title {
+    .tab {
+      width: 540px;
+      height: 88px;
+      border: 1PX solid #f41e4d;
+      border-radius: 10px;
+      margin: 30px auto 0 auto;
+      .tab-item {
+        width: 50%;
+        float: left;
+        color: #f4204e;
+        font-size: 32px;
+        line-height: 90px;
+        text-align: center;
+        box-sizing: border-box;
+        &.on {
+          background: #f41e4d;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .search {
+    width: 980px;
+    height: 96px;
+    margin: 10px auto 30px auto;
+    box-sizing: border-box;
+    position: relative;
+    .search-icon {
+      width: 84px;
+      height: 96px;
+      background: url(img/search3.png) no-repeat;
+      background-size: 46px auto;
+      background-position: center center;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 220px;
+    }
+    input {
+      padding-left: 320px;
+      width: 100%;
+      box-sizing: border-box;
+      height: 96px;
+      line-height: 96px;
+      font-size: 36px;
+      border: none;
+      outline: none;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      &::-moz-placeholder {
+        font-size: 36px;
+        color: #a9a7a7;
+
+      }
+      &:-ms-input-placeholder {
+        font-size: 36px;
+        color: #a9a7a7;
+
+      }
+      &::-webkit-input-placeholder {
+        font-size: 36px;
+        color: #a9a7a7;
+
+      }
+    }
+  }
+
+  .shop-list {
+    background: #f8f8f8;
+    .tab {
+      margin: 0 22px;
+      padding-top: 24px;
+      height: 74px;
+      border-bottom: 2PX solid #cfcfcf;
+      .tab-item {
+        width: 25%;
+        float: left;
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
+        .tab-item-c {
+          display: inline-block;
+          color: #373737;
+          font-weight: bold;
+          font-size: 34px;
+          padding: 0 10px;
+          &.on {
+            border-bottom: 2PX solid red;
+          }
+        }
+      }
+    }
+    .list {
+      padding: 30px;
+      .item {
+        width: 330px;
+        height: 330px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background: #fff;
+        float: left;
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+      ;
+      }
+    }
+  }
+
+}

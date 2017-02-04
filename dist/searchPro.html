@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>搜索结果页</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="email=no,address=no,telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/page-searchPro.css"/>
+</head>
+<body class="page-searchPro" data-page="searchPro">
+<div class="header-search">
+    <div class="input-content">
+        <a class="back"></a>
+
+        <div class="input">
+            <em class="search-icon"></em>
+            <input type="text" name="">
+        </div>
+        <a class="search-btn">搜索</a>
+    </div>
+</div>
+<main>
+    <div class="sort-bar">
+        <ul>
+            <li class="sort-item on">
+                综合
+            </li>
+            <li class="sort-item">
+                返利
+            </li>
+            <li class="sort-item">
+                销量
+            </li>
+            <li class="sort-item" id="strains">
+                筛选
+                <em class="arrow-icon down"></em>
+            </li>
+        </ul>
+        <div class="strains-box">
+            <div class="strains-content">
+                <label>价格区间（元）</label>
+
+                <div class="input">
+                    <input type="text" placeholder="起始价格">&nbsp;-&nbsp;
+                    <input type="text" placeholder="截止价格">
+                </div>
+            </div>
+            <a class="btn">确定</a>
+        </div>
+    </div>
+    <div class="goods-list">
+        <ul>
+            <li class="goods-item">
+                <div class="img-box"><img src="images/baoyou-pic1.jpg"></div>
+                <div class=goods-info>
+                    <div class="info-content">
+                        <p class="name">台湾进口 自然素材焦糖黑糖饼干代餐饼干休闲零食</p>
+
+                        <p class="info">
+                            <span>杭州</span>&nbsp;&nbsp;&nbsp;
+                            <span>尚州饰品店</span>
+                            <span class="xiaoliang">月销5000</span>
+                        </p>
+
+                        <p class="price">
+                            <span>￥69.90</span>
+                            <span class="price-r">返15.6%，约10.76</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="goods-item">
+                <div class="img-box"><img src="images/baoyou-pic1.jpg"></div>
+                <div class=goods-info>
+                    <div class="info-content">
+                        <p class="name">台湾进口 自然素材焦糖黑糖饼干代餐饼干休闲零食</p>
+
+                        <p class="info">
+                            <span>杭州</span>&nbsp;&nbsp;&nbsp;
+                            <span>尚州饰品店</span>
+                            <span class="xiaoliang">月销5000</span>
+                        </p>
+
+                        <p class="price">
+                            <span>￥69.90</span>
+                            <span class="price-r">返15.6%，约10.76</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="goods-item">
+                <div class="img-box"><img src="images/baoyou-pic1.jpg"></div>
+                <div class=goods-info>
+                    <div class="info-content">
+                        <p class="name">台湾进口 自然素材焦糖黑糖饼干代餐饼干休闲零食</p>
+
+                        <p class="info">
+                            <span>杭州</span>&nbsp;&nbsp;&nbsp;
+                            <span>尚州饰品店</span>
+                            <span class="xiaoliang">月销5000</span>
+                        </p>
+
+                        <p class="price">
+                            <span>￥69.90</span>
+                            <span class="price-r">返15.6%，约10.76</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<nav class="bottom-nav">
+    <ul>
+        <li class="on">
+            <a href="">
+                <span class="index">首页</span>
+
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="yiyuan">一元夺宝</span>
+
+                <p>一元夺宝</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="haitao">甘甘海淘团</span>
+
+                <p>甘甘海淘团</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="guang">返利逛逛</span>
+
+                <p>返利逛逛</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="mine">我的</span>
+
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- js start -->
+<script src="js/zepto.min.js"></script>
+<script src="js/autoFize.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#strains").click(function () {
+            var $arrow = $(this).find(".arrow-icon");
+            if ($arrow.hasClass("down")) {
+                $(".strains-box").show();
+                $arrow.removeClass("down").addClass("up");
+            } else if ($arrow.hasClass("up")) {
+                $arrow.removeClass("up").addClass("down");
+                $(".strains-box").hide();
+            }
+        })
+    })
+</script>
+<!-- js end -->
+</body>
+</html>

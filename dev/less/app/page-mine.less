@@ -1,0 +1,289 @@
+.page-mine {
+  position: relative;
+  padding: 100px 0 140px 0;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  .header {
+    height: 100px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+    max-width: 640PX;
+    .microphone {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      background: url(img/microphone.png) no-repeat;
+      background-size: 40px auto;
+      background-position: center center;
+    }
+    .setting {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      background: url(img/setting.png) no-repeat;
+      background-size: 56px auto;
+      background-position: center center;
+    }
+  }
+
+  .info-section {
+    height: 320px;
+    background: url(img/mine-bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 0 280px 0 300px;
+    position: relative;
+    box-sizing: border-box;
+    .head-pic {
+      position: absolute;
+      width: 160px;
+      height: 100%;
+      left: 100px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .pic-box {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        border-radius: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+    .btn-group {
+      position: absolute;
+      width: 280px;
+      right: 0;
+      top: 0;
+      height: 100%;
+      text-align: center;
+      padding-top: 70px;
+      box-sizing: border-box;
+      .btn {
+        width: 204px;
+        height: 86px;
+        text-align: center;
+        line-height: 86px;
+        font-size: 38px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 14px;
+        box-sizing: border-box;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        &.tixian {
+          background: #fff;
+          color: #000;
+        }
+        &.chongzhi {
+          background: #c00000;
+          color: #fff;
+        }
+      }
+    }
+    .name {
+      padding-top: 90px;
+      font-size: 38px;
+      color: #fff;
+      height: 60px;
+      overflow: hidden;
+      .name-txt {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .tips {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 34px;
+        padding: 0 50px;
+        background: #fff;
+        color: #000;
+        margin-left: 30px;
+        border-radius: 20px;
+      }
+    }
+    .coin {
+      font-size: 34px;
+      margin-top: 42px;
+      color: #fff;
+      line-height: 1;
+      .num {
+        color: #a2140b;
+      }
+    }
+    .card {
+      padding: 1px 5px;
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      font-size: 32px;
+    }
+
+  }
+  .property-section {
+    background: #fff;
+    padding: 40px 0 20px 0;
+    .property-item {
+      float: left;
+      width: 30%;
+      text-align: center;
+      border-right: 1PX solid #bbb;
+      box-sizing: border-box;
+      &.item-c {
+        width: 40%;
+      }
+      &:last-of-type {
+        border-right: 0;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 34px;
+      }
+      .small {
+        font-size: 28px;
+      }
+      .red {
+        color: #f80000;
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 52px;
+        margin-top: -18px;
+      }
+    }
+  }
+
+  .advance-section {
+    margin-top: 15px;
+    background: #fff;
+    .advance-item {
+      width: 33.333%;
+      background: #fff;
+      box-sizing: border-box;
+      float: left;
+      height: 270px;
+      border-right: 2PX solid #eaeaea;
+      border-bottom: 2PX solid #eaeaea;
+      padding: 40px 0;
+      text-align: center;
+      &:nth-of-type(3n) {
+        border-right: none;
+      }
+      .advance-icon {
+        display: block;
+        width: 100%;
+        height: 60%;
+        &.chongzhi {
+          background: url("img/icon-chongzhi.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.jilu {
+          background: url("img/icon-jilu.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.zhongjiang {
+          background: url("img/icon-zhongjiang.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.fanli {
+          background: url("img/icon-fanli.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.dingdan {
+          background: url("img/icon-dingdan.png") no-repeat;
+          background-size: 60px auto;
+          background-position: center center;
+        }
+        &.hehuo {
+          background: url("img/icon-hehuo.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.jifen {
+          background: url("img/icon-jifen.png") no-repeat;
+          background-size: 60px auto;
+          background-position: center center;
+        }
+        &.hongbao {
+          background: url("img/icon-hongbao.png") no-repeat;
+          background-size: 60px auto;
+          background-position: center center;
+        }
+        &.haoyou {
+          background: url("img/icon-haoyou.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.xiaoxi {
+          background: url("img/icon-xiaoxi.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.shaidan {
+          background: url("img/icon-shaidan.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.faxian {
+          background: url("img/icon-faxian.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.shoucang {
+          background: url("img/icon-shoucang.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.youhui {
+          background: url("img/icon-youhui.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.yijian {
+          background: url("img/icon-yijian.png") no-repeat;
+          background-size: 60px auto;
+          background-position: center center;
+        }
+        &.ziliao {
+          background: url("img/icon-ziliao.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+        &.help {
+          background: url("img/icon-help.png") no-repeat;
+          background-size: 70px auto;
+          background-position: center center;
+        }
+      }
+
+      .advance-txt {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}

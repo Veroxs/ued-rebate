@@ -1,0 +1,210 @@
+.page-stroll {
+  position: relative;
+  padding: 130px 0 140px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  .header {
+    height: 130px;
+    background: #d40230;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+    max-width: 640PX;
+    padding: 25px 160px 0 160px;
+    .input-content {
+      box-sizing: border-box;
+      width: 100%;
+      height: 80px;
+      border: 1PX solid #fff;
+      border-radius: 10px;
+      padding: 0 20px 0 260px;
+      position: relative;
+      .search-icon {
+        width: 80px;
+        height: 100%;
+        background: url("img/search8.png") no-repeat;
+        background-size: 40px auto;
+        background-position: center center;
+        position: absolute;
+        left:180px;
+        top: 0;
+        display: block;
+      }
+      input {
+        width: 100%;
+        font-size: 34px;
+        color: #fff;
+        background: #d40230;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        &::-moz-placeholder {
+          font-size: 34px;
+          color: #fff;
+
+        }
+        &:-ms-input-placeholder {
+          font-size: 34px;
+          color: #fff;
+
+        }
+        &::-webkit-input-placeholder {
+          font-size: 34px;
+          color: #fff;
+        }
+
+      }
+    }
+  }
+  .left-bar {
+      width: 220px;
+      box-sizing: border-box;
+      border-right: 2PX solid #eee;
+      position: fixed;
+      z-index: 99;
+      left: 0;
+      top: 130px;
+      bottom: 140px;
+      height: 100%;
+      background: #fff;
+      ul {
+        overflow: auto;
+      }
+      .classify-item {
+        height: 130px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 34px;
+        padding: 40px 0;
+        height: 130px;
+        line-height: 50px;
+        color: #5f5e5e;
+        background: #fff;
+        border-bottom: 1PX solid #eee;
+        &.on {
+          color: #d40230;
+        }
+      }
+    }
+  .stroll-main {
+    padding-left: 220px;
+    position: relative;
+    box-sizing: border-box;
+    .main-content {
+      .temai {
+        border-bottom: 1PX solid #eee;
+        .temai-item {
+          width: 50%;
+          height: 190px;
+          box-sizing: border-box;
+          border-right: 1PX solid #eee;
+          float: left;
+          &:last-of-type {
+            border-right: none;
+          }
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .classify-list{
+        padding: 30px 35px;
+        box-sizing: border-box;
+        .classify-item{
+          float: left;
+          width: 238px;
+          box-sizing: border-box;
+          margin-right: 30px;
+          &:nth-of-type(3n){
+            margin-right:0;
+          };
+          .img-box{
+            width: 100%;
+            height: 190px;
+            border:1PX solid #ececec;
+            border-radius: 10px; 
+            img{
+              height: 100%;
+            }
+          }
+          .classify-name{
+            width: 100%;
+            height: 90px;
+            padding: 20px 0;
+            line-height: 50px;
+            font-size: 30px;
+            text-align: center;
+            box-sizing: border-box;
+          }
+        }
+      }
+      .goods-list{
+        padding: 0 35px;
+        .goods-item{
+          width: 100%;
+          height: 322px;
+          border-radius: 10px;
+          border:1PX solid #ececec;
+          padding-left:360px;
+          box-sizing: border-box;
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 20px;
+          .img-box{
+            width: 330px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            img{
+              height: 100%;
+            }
+          } 
+          .info-box{
+            .name{
+              height: 50px;
+              line-height: 50px;
+              font-size: 30px;
+              overflow: hidden;
+              padding-top:40px; 
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .price{
+              padding-top: 38px;
+              font-size: 30px;
+              .zhe{
+                text-decoration: line-through;
+              }
+            }
+            .fan-price{
+              margin-top: 36px;
+              font-size: 32px;
+              color: #d40230;
+              .fan{
+                display: inline-block;
+                padding: 1px 10px;
+                background-color: #d40230;
+                color: #fff;
+                border-radius: 10px;
+
+              }
+            }
+            .from{
+              margin-top: 10px;
+              text-align: right;
+              font-size: 30px;
+              color: #868686;
+              padding-right: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

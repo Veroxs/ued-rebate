@@ -1,0 +1,280 @@
+.page-kouling {
+  position: relative;
+  padding: 140px 0 200px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  .img-box {
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
+  .info-box {
+    padding: 30px;
+    .name {
+      font-size: 34px;
+      color: #999;
+      .baoyou {
+        font-size: 38px;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+    .price {
+      margin-top: 16px;
+      font-size: 46px;
+      padding-left: 10px;
+      color: #606060;
+      .zhekou {
+        color: #b0b0b0;
+        text-decoration: line-through;
+      }
+    }
+
+    .price-fan {
+      margin-top: 16px;
+      font-size: 42px;
+      padding-left: 16px;
+      .num {
+        font-size: 34px;
+        color: #e94c92;
+      }
+      .daoshou {
+        border: 1px solid #e94c92;
+        padding: 2px 5px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 38px;
+        color: #e94c92;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .from {
+    height: 100px;
+    background: #fbfbfb;
+    line-height: 100px;
+    font-size: 38px;
+    padding-left: 100px;
+    .gray {
+      color: #858585;
+    }
+    .icon {
+      display: inline-block;
+      width: 60px;
+      height: 100px;
+      background: url("img/tmall.png") no-repeat;
+      background-size: 50px auto;
+      background-position: center center;
+      vertical-align: middle;
+    }
+  }
+
+  .kouling-box {
+    width: 880px;
+    padding: 60px 120px;
+    display: none;
+    .box-title {
+      font-size: 60px;
+      text-align: center;
+    }
+    p {
+      font-size: 30px;
+      line-height: 1.5;
+      &.p1 {
+        text-align: left;
+        margin-top: 40px;
+      }
+      &.p2 {
+        text-align: center;
+        margin-top: 60px;
+      }
+    }
+    .input-content {
+      margin-top: 20px;
+      text-align: center;
+      input {
+        width: 624px;
+        height: 86px;
+        border: 1PX solid #f2f2f2;
+        border-radius: 10px;
+        outline: none;
+        box-sizing: border-box;
+        text-align: center;
+        background: #fff;
+      }
+    }
+
+    .btn-download {
+      display: block;
+      width: 420px;
+      height: 86px;
+      text-align: center;
+      line-height: 86px;
+      color: #fff;
+      font-size: 30px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin: 20px auto 60px auto;
+      background: #ef027c;
+    }
+  }
+
+  .linkTo {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    max-width: 640PX;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    max-height: 80vh;
+    min-height: 30vh;
+    background: #fff;
+    z-index: 9999;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 110px 0;
+    .bottom {
+      height: 110px;
+      background: #a78c67;
+      color: #fff;
+      line-height: 110px;
+      font-size: 30px;
+      padding: 0 86px;
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      .fan {
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+      }
+      .xuzhi {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        em {
+          display: inline-block;
+          vertical-align: middle;
+          width: 60px;
+          height: 110px;
+          background: url("img/zhankai.png") no-repeat;
+          background-size: 36px auto;
+          background-position: center center;
+        }
+      }
+    }
+    .title {
+      font-size: 32px;
+      height: 110px;
+      line-height: 110px;
+      text-align: center;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      .red {
+        color: #c1012b;
+      }
+    }
+    .content {
+      margin: 40px auto;
+      padding: 20px 86px 0 86px;
+      height: 900px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      .price-box {
+        width: 100%;
+        height: 106px;
+        border-radius: 60px;
+        line-height: 106px;
+        padding: 0 60px;
+        box-sizing: border-box;
+        font-size: 32px;
+        margin-bottom: 60px;
+        &.b1 {
+          background: #fff;
+          color: #a78c67;
+          border: 1PX solid #a78c67;
+        }
+        &.b2 {
+          background: #a78c67;
+          color: #fff;
+          border: 1PX solid #a78c67;
+        }
+        &.b3 {
+          background: #fff;
+          color: #a450d5;
+          border: 1PX solid #a450d5;
+        }
+        .txt {
+          float: left;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .price {
+          float: right;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .tips-content {
+        padding-left: 60px;
+        .tips-title {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+        .tips-p {
+          p {
+            font-size: 28px;
+            em {
+              padding-right: 14px
+            }
+          }
+          .question {
+            margin-bottom: 20px;
+          }
+          .answer {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    max-width: 640PX;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      width: 760px;
+      height: 100px;
+      background: #e50579;
+      color: #fff;
+      font-size: 40px;
+      line-height: 100px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 10px;
+    }
+  }
+}
