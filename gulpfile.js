@@ -41,7 +41,15 @@ gulp.task('indexLess', function () {
 
     gulp.src(path.dev + "/js/**")
         .pipe(gulp.dest(path.dist + "/js/"))
+  
 })
+
+gulp.task('dev', ['indexLess'], function () {
+    gulp.src(path.dev + '/images/*')
+        .pipe(gulp.dest(path.dist + "/css/app/images"))
+    gulp.watch(path.dev + "/less/**/*.less", ['indexLess'])
+});
+
 gulp.task('base', function () {
     gulp.src(path.dev + "/less/base.less")
         .pipe(less())
